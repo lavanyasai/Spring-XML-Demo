@@ -29,4 +29,7 @@
     <bean id="beanLifeCycle" class="com.stackroute.domain.BeanLifeCycleDemoBean" init-method="customInit" destroy-method="customDestroy">
     </bean>
 
+    <bean id="beanPostProcessorLifeCycle" class="com.stackroute.domain.BeanPostProcessorDemoBean">
+    </bean>
+
 </beans>

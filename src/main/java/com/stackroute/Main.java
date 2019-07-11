@@ -1,6 +1,7 @@
 package com.stackroute;
 
 import com.stackroute.domain.BeanLifeCycleDemoBean;
+import com.stackroute.domain.BeanPostProcessorDemoBean;
 import com.stackroute.domain.Movie;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
@@ -17,6 +18,9 @@ public class Main
 
         Movie firstMovie = applicationContext.getBean("firstMovie", Movie.class);
         firstMovie.displayInformation();
+
+        BeanPostProcessorDemoBean beanPostProcessorDemoBean = applicationContext.getBean("beanPostProcessorLifeCycle", BeanPostProcessorDemoBean.class);
+
         applicationContext.close();
     }
 }
