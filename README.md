@@ -1,5 +1,5 @@
-Created three beans of type actor in the bean definition file (beans.xml).
+Deleted the constructor based injection in the bean definition file (beans.xml) that injects an Actor bean.
 
-Used constructor-based injection in the bean definition file to inject property values in each of the three beans via name, index and type respectively.
+Used autowire byName in the Movie bean to inject an Actor bean.
 
-Printed Author information using Movie Bean.
+Used constructor inject to inject an Actor bean.

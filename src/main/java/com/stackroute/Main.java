@@ -10,17 +10,10 @@ public class Main
 
         //Using ApplicationContext
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("file:src/beans.xml");
-        Movie firstMovie = applicationContext.getBean("Movie A, Movie B", Movie.class);
+        Movie firstMovie = applicationContext.getBean("firstMovie", Movie.class);
         firstMovie.displayInformation();
 
-        Movie secondMovie = applicationContext.getBean("Movie A, Movie B", Movie.class);
+        Movie secondMovie = applicationContext.getBean("secondMovie", Movie.class);
         secondMovie.displayInformation();
-
-        if(firstMovie == secondMovie) {
-            System.out.println("Equal");
-        }
-        else {
-            System.out.println("Not Equal");
-        }
     }
 }

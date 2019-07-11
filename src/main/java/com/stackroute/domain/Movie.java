@@ -8,23 +8,25 @@ Displays actor information for respective movies.
 
 public class Movie {
 
-    private List<Actor> actor;
+    private Actor actor;
 
-    public Movie(List<Actor> actor) {
+    public Movie() {
+
+    }
+
+    public Movie(Actor actor) {
         this.actor = actor;
     }
 
-    public List<Actor> getActor() {
+    public Actor getActor() {
         return actor;
     }
 
-    public void setActor(List<Actor> actor) {
+    public void setActor(Actor actor) {
         this.actor = actor;
     }
 
     public void displayInformation() {
-        for(Actor actor: actor) {
-            actor.display();
-        }
+        actor.display();
     }
 }
