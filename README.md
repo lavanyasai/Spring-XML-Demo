@@ -1,14 +1,5 @@
-Created a Main class in package com.stackroute and two Spring Beans- Movie, and Actor in package com.stackroute.domain.
+Created three beans of type actor in the bean definition file (beans.xml).
 
-Actor has two String properties, name and gender, and an age property of type int.
+Used constructor-based injection in the bean definition file to inject property values in each of the three beans via name, index and type respectively.
 
-An Actor can be initialized with the three properties via the corresponding setter methods. Use
-property based injection in the bean definition file (beans.xml)
-
-Movie “has a” Actor that can be initialized via the corresponding setter method. Use property
-based object injection in the bean definition file (beans.xml)
-
-The Main class looks up Movie bean via three ways to prints out actor information:
-1. Using XmlBeanFactory
-2. Using Spring 3.2 BeanDefinitionRegistry and BeanDefinitionReader
-3. Using ApplicationContext
+Printed Author information using Movie Bean.
