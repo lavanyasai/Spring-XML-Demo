@@ -1,5 +1,9 @@
 package com.stackroute.domain;
 
+/*
+Actor Model Class
+ */
+
 public class Actor {
 
     private String name;

@@ -1,5 +1,9 @@
 package com.stackroute.domain;
 
+/*
+Displays actor information for respective movies.
+ */
+
 public class Movie {
 
     private Actor actor;
